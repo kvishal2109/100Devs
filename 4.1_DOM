@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .b1 {
+        text-align: center;
+    }
+    #finalSum {
+        color: aqua;
+    }
+</style>
+<script>
+    function displaySum(){
+        const a = document.getElementById("FirstNumber").value;
+        const b = document.getElementById("SecondNumber").value;
+        const element = document.getElementById("finalSum");
+        element.innerHTML = Number(a) + Number(b);
+    }   
+</script>
+
+
+<body>
+    <div class="b1">
+    <input id="FirstNumber" type="text" placeholder="First Number"> </input>
+    <br /> <br/>
+    <input id="SecondNumber" type="text" placeholder="Second Number"> </input>
+    <br /> <br />
+    <button onclick="displaySum()">Calculate Sum</button>
+    <div id="finalSum"></div>
+</div>
+</body>
+</html>
